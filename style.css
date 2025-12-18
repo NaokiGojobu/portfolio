@@ -598,7 +598,8 @@
 
 	/* WORKS サムネイル内スクロールバーを細く */
 	.work-thumb-inner::-webkit-scrollbar {
-	  width: 4px;              /* ← 太さ（おすすめ 4〜6px） */
+		background-color: rgba(79, 209, 197, 0.3); /* ← 色変更 */
+	    width: 8px;              /* ← 太さ（おすすめ 4〜6px） */
 	}
 
 	.work-thumb-inner::-webkit-scrollbar-track {
@@ -606,12 +607,12 @@
 	}
 
 	.work-thumb-inner::-webkit-scrollbar-thumb {
-	  background-color: rgba(160, 174, 192, 0.5);
+	  background-color: rgba(79, 209, 192, 1);
 	  border-radius: 10px;
 	}
 
 	.work-thumb-inner::-webkit-scrollbar-thumb:hover {
-	  background-color: rgba(160, 174, 192, 0.8);
+	  background-color: rgba(70, 209, 192, 1);
 	}
 
 
