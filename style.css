@@ -841,4 +841,28 @@
       .about-stats {
         grid-template-columns: minmax(0, 1fr);
       }
-    }
+	
+		/* ===== スマホ：WORKS サムネイル内スクロールバー改善 ===== */
+@media (max-width: 768px) {
+
+  /* 常にスクロール可能にする（hoverはスマホで効かない） */
+  .work-thumb-inner {
+    overflow-y: auto;
+  }
+
+  /* スクロールバーを太く */
+  .work-thumb-inner::-webkit-scrollbar {
+    width: 12px;              /* ← 重要：太さ */
+  }
+
+  .work-thumb-inner::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .work-thumb-inner::-webkit-scrollbar-thumb {
+    background-color: rgba(79, 209, 197, 0.95);
+    border-radius: 999px;
+    border: 2px solid rgba(0,0,0,0.4); /* 指で掴みやすく */
+  }
+}
+}
