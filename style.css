@@ -648,9 +648,6 @@
       font-size: 0.76rem;
       color: var(--text-sub);
     }
-.work-meta a{
-	color:orangered;
-}
 
     .work-tags {
       display: flex;
